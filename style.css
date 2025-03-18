@@ -1,16 +1,25 @@
 /* General Styles */
-body {
+body, html {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f0f4f8;
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Header Section */
 header {
   background-color: #007bff;
   color: white;
-  padding: 3rem 1rem;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
 }
 
 h1 {
@@ -20,16 +29,16 @@ h1 {
 
 p {
   font-size: 1.2rem;
-  margin-top: 10px;
 }
 
-/* Card Container */
+/* Card Container (Centering) */
 .links {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  margin: 2rem auto;
-  max-width: 1200px;
+  margin-top: 2rem;
+  width: 100%;
 }
 
 .card {
@@ -42,6 +51,7 @@ p {
   min-width: 280px;
   max-width: 350px;
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .card:hover {
@@ -66,38 +76,24 @@ a:hover {
   background-color: #0056b3;
 }
 
+/* Footer Section */
 footer {
   margin-top: 2rem;
   color: #555;
 }
 
-/* Media Queries for Responsiveness */
+/* Responsive Design */
 
 /* For Tablets */
 @media (max-width: 900px) {
   .card {
-    width: calc(50% - 2rem); /* 2 cards per row */
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 1rem;
+    width: calc(50% - 2rem);
   }
 }
 
 /* For Phones */
 @media (max-width: 600px) {
   .card {
-    width: calc(100% - 2rem); /* 1 card per row */
-  }
-  header {
-    padding: 2rem;
-  }
-  h1 {
-    font-size: 1.8rem;
-  }
-  p {
-    font-size: 1rem;
+    width: calc(100% - 2rem);
   }
 }
