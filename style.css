@@ -10,27 +10,42 @@ body {
 header {
   background-color: #007bff;
   color: white;
-  padding: 2rem;
+  padding: 3rem 1rem;
 }
 
 h1 {
   margin: 0;
+  font-size: 2.5rem;
 }
 
+p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Card Container */
 .links {
   display: flex;
   justify-content: center;
-  margin: 2rem;
   flex-wrap: wrap;
+  margin: 2rem auto;
+  max-width: 1200px;
 }
 
 .card {
   background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
   padding: 1.5rem;
   margin: 1rem;
-  width: 300px;
+  width: calc(33.33% - 2rem);
+  min-width: 280px;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
 }
 
 .card h2 {
@@ -43,7 +58,7 @@ a {
   text-decoration: none;
   color: white;
   background-color: #007bff;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 8px;
 }
 
@@ -56,34 +71,33 @@ footer {
   color: #555;
 }
 
-/* Responsive Design */
+/* Media Queries for Responsiveness */
 
 /* For Tablets */
 @media (max-width: 900px) {
-  .links {
-    flex-direction: column;
-    align-items: center;
-  }
   .card {
-    width: 80%;
+    width: calc(50% - 2rem); /* 2 cards per row */
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
   }
 }
 
 /* For Phones */
 @media (max-width: 600px) {
-  header {
-    padding: 1.5rem;
+  .card {
+    width: calc(100% - 2rem); /* 1 card per row */
   }
-  
+  header {
+    padding: 2rem;
+  }
   h1 {
     font-size: 1.8rem;
   }
-
-  .card {
-    width: 90%;
-  }
-  
-  a {
-    padding: 0.4rem 0.8rem;
+  p {
+    font-size: 1rem;
   }
 }
