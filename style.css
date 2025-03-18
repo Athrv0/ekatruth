@@ -1,55 +1,41 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f4f8;
-  text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekatruth - Unveiling the Truth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Ekatruth</h1>
+    <p>Connecting you to the truth through our dedicated platforms.</p>
+  </header>
+  
+  <section class="links">
+    <div class="card">
+      <h2>GlobalXpose</h2>
+      <p>Exposing terrorism and anti-India activities.</p>
+      <a href="https://globalxpose.com" target="_blank">Visit GlobalXpose</a>
+    </div>
+    
+    <div class="card">
+      <h2>TejRakshanet</h2>
+      <p>Cybersecurity and digital protection.</p>
+      <a href="https://tejrakshanet.com" target="_blank">Visit TejRakshanet</a>
+    </div>
+    
+    <div class="card">
+      <h2>XposeReality</h2>
+      <p>Revealing corruption and human rights violations.</p>
+      <a href="https://xposereality.com" target="_blank">Visit XposeReality</a>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Ekatruth. All Rights Reserved.</p>
+  </footer>
 
-header {
-  background-color: #007bff;
-  color: white;
-  padding: 2rem;
-}
-
-h1 {
-  margin: 0;
-}
-
-.links {
-  display: flex;
-  justify-content: center;
-  margin: 2rem;
-}
-
-.card {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 1.5rem;
-  margin: 1rem;
-  width: 300px;
-}
-
-.card h2 {
-  color: #007bff;
-}
-
-a {
-  display: inline-block;
-  margin-top: 1rem;
-  text-decoration: none;
-  color: white;
-  background-color: #007bff;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-}
-
-a:hover {
-  background-color: #0056b3;
-}
-
-footer {
-  margin-top: 2rem;
-  color: #555;
-}
+  <script src="script.js"></script>
+</body>
+</html>
