@@ -1,21 +1,9 @@
 // Open Side Menu
-function openMenu() {
-  document.getElementById("sideMenu").style.width = "250px";
-}
+document.getElementById("menu-btn").onclick = function() {
+  document.getElementById("side-menu").style.right = "0";
+};
 
 // Close Side Menu
-function closeMenu() {
-  document.getElementById("sideMenu").style.width = "0";
-}
-
-// Smooth Scrolling for Internal Links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    const targetSection = document.querySelector(this.getAttribute('href'));
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-      closeMenu();
-    }
-  });
-});
+document.getElementById("close-btn").onclick = function() {
+  document.getElementById("side-menu").style.right = "-250px";
+};
