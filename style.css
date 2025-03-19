@@ -6,6 +6,7 @@ body, html {
   background-color: #0a0f1b;
   color: white;
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 /* Header Section */
@@ -29,6 +30,7 @@ nav a, .menu-btn {
   text-decoration: none;
   background-color: #00bcd4;
   border-radius: 8px;
+  margin-left: 10px;
 }
 
 nav a:hover, .menu-btn:hover {
@@ -95,4 +97,30 @@ footer {
   background-color: #1c2a3f;
   padding: 2rem;
   color: #bbb;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  nav a {
+    margin-bottom: 10px;
+  }
+
+  .menu-btn {
+    display: inline-block;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-btn {
+    display: none;
+  }
 }
