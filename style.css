@@ -3,14 +3,14 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #000;
+  background-color: #0a0f1b;
   color: white;
   text-align: center;
 }
 
-/* Header Styles */
+/* Header Section */
 header {
-  background-color: #111;
+  background-color: #1c2a3f;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -19,41 +19,53 @@ header {
 
 header h1 {
   margin: 0;
-  color: #ff9800;
+  color: #00bcd4;
 }
 
 /* Navigation Menu */
-nav a, .dropbtn {
+nav a, .menu-btn {
   color: white;
   padding: 12px 16px;
   text-decoration: none;
-}
-
-nav a:hover, .dropdown-content a:hover {
-  background-color: #333;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #222;
-  min-width: 160px;
+  background-color: #00bcd4;
   border-radius: 8px;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+nav a:hover, .menu-btn:hover {
+  background-color: #0097a7;
 }
 
-.dropdown-content a {
+/* Side Menu */
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #1c2a3f;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.side-menu a {
+  padding: 15px 30px;
+  text-decoration: none;
   color: white;
-  padding: 12px 16px;
   display: block;
+  font-size: 20px;
+}
+
+.side-menu a:hover {
+  background-color: #00bcd4;
+  color: black;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
 }
 
 /* Section Styles */
@@ -62,36 +74,25 @@ nav a:hover, .dropdown-content a:hover {
 }
 
 h2 {
-  color: #ff9800;
+  color: #00bcd4;
 }
 
 a {
-  background-color: #ff9800;
+  background-color: #00bcd4;
   color: black;
   padding: 1rem 2rem;
   margin: 1rem;
   text-decoration: none;
-  display: inline-block;
   border-radius: 8px;
 }
 
 a:hover {
-  background-color: #ffcc80;
+  background-color: #0097a7;
 }
 
-/* Footer Styles */
+/* Footer Section */
 footer {
-  background-color: #111;
+  background-color: #1c2a3f;
   padding: 2rem;
   color: #bbb;
-}
-
-footer p {
-  margin: 0.5rem 0;
-}
-
-.logo {
-  width: 120px;
-  height: auto;
-  margin-bottom: 1rem;
 }
