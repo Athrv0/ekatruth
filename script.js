@@ -1,5 +1,27 @@
-document.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    alert(`Redirecting to ${link.textContent}`);
+// Open the side menu
+function openMenu() {
+  document.getElementById("sideMenu").style.width = "250px";
+}
+
+// Close the side menu
+function closeMenu() {
+  document.getElementById("sideMenu").style.width = "0";
+}
+
+// Smooth Scrolling for Navbar
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' });
+    closeMenu(); // Close menu after clicking on mobile
   });
 });
+
+// Donate Button Alert
+const donateButton = document.querySelector('button');
+if (donateButton) {
+  donateButton.addEventListener('click', function() {
+    alert("Thank you for your interest in donating! Please visit our donation page.");
+  });
+}
