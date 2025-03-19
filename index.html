@@ -14,51 +14,52 @@
       <a href="#home">Home</a>
       <a href="#about">About Us</a>
       <a href="#donate">Donate Us</a>
-      <div class="dropdown">
-        <button class="dropbtn">Menu ▼</button>
-        <div class="dropdown-content">
-          <a href="#contact">Contact Us</a>
-          <a href="#terms">Terms and Conditions</a>
-          <a href="#join">Join Us</a>
-          <a href="#privacy">Privacy Policy</a>
-        </div>
-      </div>
+      <button class="menu-btn" onclick="openMenu()">☰ Menu</button>
     </nav>
   </header>
+
+  <!-- Side Menu (Hidden Initially) -->
+  <div id="sideMenu" class="side-menu">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">×</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#terms">Terms and Conditions</a>
+    <a href="#join">Join Us</a>
+    <a href="#privacy">Privacy Policy</a>
+  </div>
 
   <!-- Home Section -->
   <section id="home" class="section">
     <h2>Welcome to Ekatruth</h2>
-    <p>We are committed to uncovering the truth and exposing terrorism, cybercrime, and corruption.  
-      <strong>GlobalXpose</strong> is our initiative to expose terrorism and anti-India activities,  
-      <strong>TejRakshanet</strong> focuses on cybersecurity,  
-      and <strong>XposeReality</strong> reveals corruption and human rights violations.</p>
-    <div class="links">
-      <a href="https://globalxpose.com" target="_blank">Visit GlobalXpose</a>
-      <a href="https://tejrakshanet.com" target="_blank">Visit TejRakshanet</a>
-      <a href="https://xposereality.com" target="_blank">Visit XposeReality</a>
-    </div>
+    <p>We are on a mission to uncover the truth and expose wrongdoings through our platforms.</p>
   </section>
 
-  <!-- About Us Section -->
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>Ekatruth is an independent organization dedicated to exposing the truth and protecting society from malicious activities.</p>
+  <!-- GlobalXpose Section -->
+  <section id="globalxpose" class="section">
+    <h2>GlobalXpose - Exposing the Unseen</h2>
+    <p>GlobalXpose is dedicated to exposing terrorism, cyber threats, and anti-India activities.</p>
+    <a href="https://athrv0.github.io/globalxpose-/" target="_blank">Visit GlobalXpose</a>
   </section>
 
-  <!-- Donate Section -->
-  <section id="donate" class="section">
-    <h2>Donate Us</h2>
-    <p>Your support helps us continue our mission. Every contribution makes a difference.</p>
-    <button>Donate Now</button>
+  <!-- TejRakshanet Section -->
+  <section id="tejrakshanet" class="section">
+    <h2>TejRakshanet - Securing the Digital World</h2>
+    <p>TejRakshanet is your shield against cyberattacks and digital threats.</p>
+    <a href="https://tejrakshanet.blogspot.com/" target="_blank">Visit TejRakshanet</a>
+  </section>
+
+  <!-- XposeReality Section -->
+  <section id="xposereality" class="section">
+    <h2>XposeReality - Unmasking the Truth</h2>
+    <p>XposeReality reveals corruption, human rights violations, and unethical practices.</p>
+    <a href="https://exposerealityofficial.blogspot.com/" target="_blank">Visit XposeReality</a>
   </section>
 
   <!-- Footer Section -->
   <footer>
-    <img src="logo.png" alt="Ekatruth Logo" class="logo">
-    <p>"Truth Alone Triumphs" - Ekatruth</p>
     <p>&copy; 2025 Ekatruth. All Rights Reserved.</p>
+    <p>"Truth Alone Triumphs" - Ekatruth</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
