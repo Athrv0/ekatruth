@@ -1,109 +1,54 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-/* Body and Header */
 body {
   font-family: Arial, sans-serif;
-  background-color: #0a0f1b;
-  color: white;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  background-color: #1c2a3f;
+.container {
   display: flex;
-  justify-content: space-between;
-  padding: 1rem;
+  height: 100vh;
 }
 
-header h1 {
-  color: #00bcd4;
+.left-section {
+  flex: 3;
+  padding: 40px;
+  background-color: #001f3f;
 }
 
-/* Navigation Menu */
-nav a, .menu-btn {
-  color: white;
+.left-section h1 {
+  color: #00bfff;
+}
+
+.left-section a {
+  color: #00bfff;
   text-decoration: none;
-  background-color: #00bcd4;
-  padding: 12px 16px;
-  border-radius: 8px;
-  margin-left: 10px;
 }
 
-nav a:hover, .menu-btn:hover {
-  background-color: #0097a7;
+.right-section {
+  flex: 1;
+  background-color: #002b4f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Side Menu */
-.side-menu {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #1c2a3f;
-  overflow-x: hidden;
-  transition: 0.4s;
-  z-index: 100;
-  padding-top: 60px;
+nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-.side-menu a {
-  color: white;
-  padding: 16px 32px;
+nav ul li a {
+  color: #00bfff;
+  font-size: 18px;
+  text-decoration: none;
   display: block;
-  font-size: 20px;
+  margin: 15px 0;
 }
 
-.side-menu a:hover {
-  background-color: #00bcd4;
-}
-
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 36px;
-}
-
-/* Section Styles */
-.section {
-  padding: 4rem 2rem;
-}
-
-h2 {
-  color: #00bcd4;
-}
-
-button {
-  background-color: #00bcd4;
-  color: black;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0097a7;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  nav a {
-    display: none;
-  }
-  .menu-btn {
-    display: block;
-  }
-}
-
-@media (min-width: 769px) {
-  .menu-btn {
-    display: none;
-  }
+footer {
+  text-align: center;
+  background-color: #000;
+  padding: 10px;
 }
