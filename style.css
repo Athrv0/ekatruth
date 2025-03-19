@@ -1,103 +1,96 @@
-/* General Reset */
-* {
+/* General Styles */
+body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: Arial, sans-serif;
-}
-
-/* Body Background */
-body {
-  background: linear-gradient(to bottom, #000428, #004e92);
+  background-color: #0a0f1b; /* Dark Blue-Black */
   color: white;
+  text-align: center;
 }
 
-/* Header */
+/* Header Section */
 header {
-  background-color: #000428;
+  background-color: #1c2a3f; /* Slight Blue-Black */
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
 }
 
-h1 {
+header h1 {
+  margin: 0;
+  color: #00bcd4; /* Light Cyan */
+}
+
+/* Navigation Menu */
+nav a, .dropbtn {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+nav a:hover, .dropdown-content a:hover {
+  background-color: #2a3b52; /* Darker Blue */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1c2a3f;
+  min-width: 160px;
+  border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+}
+
+/* Section Styles */
+.section {
+  padding: 4rem 2rem;
+  background-color: #0a0f1b;
+}
+
+h2 {
   color: #00bcd4;
 }
 
-/* Menu Button */
-#menu-btn {
+p {
+  font-size: 1.2rem;
+}
+
+a {
   background-color: #00bcd4;
-  border: none;
   color: black;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-/* Side Menu */
-#side-menu {
-  width: 250px;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
-  position: fixed;
-  top: 0;
-  right: -250px;
-  transition: right 0.3s;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-#side-menu a {
+  padding: 1rem 2rem;
+  margin: 1rem;
   text-decoration: none;
-  color: white;
-  padding: 15px;
-  margin: 10px 0;
-  background-color: #00bcd4;
-  border-radius: 8px;
-  text-align: center;
-  transition: background-color 0.3s;
-}
-
-#side-menu a:hover {
-  background-color: #0097a7;
-}
-
-#close-btn {
-  align-self: flex-end;
-  background-color: red;
-  border: none;
-  color: white;
-  padding: 8px;
-  cursor: pointer;
-}
-
-/* Home Page */
-#home {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.platform-links a {
   display: inline-block;
-  margin: 20px;
-  background-color: #00bcd4;
-  color: black;
-  text-decoration: none;
-  padding: 12px 24px;
   border-radius: 8px;
-  transition: background-color 0.3s, transform 0.3s;
 }
 
-.platform-links a:hover {
+a:hover {
   background-color: #0097a7;
-  transform: translateY(-5px);
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
-  background-color: rgba(0, 0, 0, 0.8);
-  text-align: center;
-  padding: 20px;
+  background-color: #1c2a3f;
+  padding: 2rem;
+  color: #bbb;
+}
+
+footer p {
+  margin: 0.5rem 0;
 }
