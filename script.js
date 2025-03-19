@@ -20,7 +20,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Donate Button Alert (Only when clicked)
-document.getElementById('donateBtn').addEventListener('click', function() {
-  alert("Thank you for supporting our cause!");
-});
