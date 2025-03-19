@@ -1,29 +1,26 @@
-// Open the side menu
+// Open Side Menu
 function openMenu() {
   document.getElementById("sideMenu").style.width = "250px";
 }
 
-// Close the side menu
+// Close Side Menu
 function closeMenu() {
   document.getElementById("sideMenu").style.width = "0";
 }
 
-// Smooth Scrolling
+// Smooth Scrolling Fix
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-      closeMenu(); // Close the menu on click (mobile-friendly)
+    const targetSection = document.querySelector(this.getAttribute('href'));
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+      closeMenu();
     }
   });
 });
 
-// Donate Button Alert
-const donateButton = document.querySelector('button');
-if (donateButton) {
-  donateButton.addEventListener('click', function() {
-    alert("Thank you for your interest in donating! Please visit our donation page.");
-  });
-}
+// Donate Button Alert (Only when clicked)
+document.getElementById('donateBtn').addEventListener('click', function() {
+  alert("Thank you for supporting our cause!");
+});
